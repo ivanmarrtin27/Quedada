@@ -9,7 +9,7 @@ Privacidad: https://ivanmarrtin2703.github.io/quedada-privacy/
 EAS: https://expo.dev/accounts/ivanmarrtin/projects/quedada  
 Textos ficha: [`play-listing.es.md`](play-listing.es.md)  
 Feature graphic: `feature-graphic.png` (1024×500)  
-Capturas: `screenshots/` (mín. 2, ideal 4–6, **sin Picante**; hay mockups de marca — preferir reales en ficha) — ver [`screenshots/README.md`](screenshots/README.md)  
+Capturas: `screenshots/` (mín. 2, ideal 4–6, **sin Picante**; capturas reales de dispositivo) — ver [`screenshots/README.md`](screenshots/README.md)  
 Smoke test: [`smoke-test.md`](smoke-test.md)
 
 ## Monetización en código (hecho)

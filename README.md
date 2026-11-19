@@ -43,7 +43,7 @@ Hay contenido **Suave** (apto para ficha y capturas) y **Picante** (**18+**). El
 
 ## Capturas (modo Suave)
 
-Mockups de marca alineados con la UI oscura de la app (logo real). Ideal para docs y como base de ficha; se pueden sustituir por capturas del móvil cuando toque publicar.
+Capturas reales de dispositivo (modo Suave / Clásico). Sin contenido Picante.
 
 | Home | Qué Prefieres | Impostor |
 |:---:|:---:|:---:|
@@ -53,7 +53,7 @@ Mockups de marca alineados con la UI oscura de la app (logo real). Ideal para do
 |:---:|:---:|
 | ![Yo Nunca](store/screenshots/04-yo-nunca.png) | ![Ajustes](store/screenshots/05-ajustes.png) |
 
-Detalle y checklist: [`store/screenshots/README.md`](store/screenshots/README.md)
+Detalle: [`store/screenshots/README.md`](store/screenshots/README.md)
 
 ---
 
@@ -92,9 +92,9 @@ También: [`store/play-console-checklist.md`](store/play-console-checklist.md) �
 - [x] Branding (logo / icono / splash / feature graphic)
 - [x] Política de privacidad (URL pública)
 - [x] Monetización equilibrada en código (interstitials + IAP `remove_ads`)
-- [x] Mockups Suave en `store/screenshots/`
+- [x] Capturas reales Suave en `store/screenshots/`
 - [ ] Variables AdMob reales en EAS + AAB production al día
-- [ ] Capturas reales de dispositivo en la ficha Play
+- [ ] Subir capturas a la ficha Play
 - [ ] Completar ficha + IAP + enviar a revisión
 
 ---

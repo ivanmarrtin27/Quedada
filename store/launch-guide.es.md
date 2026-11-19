@@ -65,8 +65,8 @@ Instala el APK y marca [`smoke-test.md`](smoke-test.md).
 
 ## B) Capturas para la ficha (tú, en el móvil)
 
-Hay **mockups Suave** en [`screenshots/`](screenshots/) (logo real, 1080×1920) para docs.  
-Para la ficha Play, preferí **capturas reales** del APK **preview**, modo **Suave** (nada de Picante).
+Hay **capturas reales** (modo Suave) en [`screenshots/`](screenshots/) para docs y ficha.  
+En Play Console, subí esas u otras capturas del dispositivo / APK **preview**, modo **Suave** (nada de Picante).
 
 Mínimo 2; ideal (mismos nombres):
 
@@ -143,8 +143,8 @@ Primera app: suele tardar **1–3+ días**. Si rechazan, lee el motivo y avísam
 - [x] AdMob App ID + Interstitial reales (EAS production + preview)
 - [x] Vars EAS en production (+ preview)
 - [x] `eas build -p android --profile production` OK (histórico; rebuild tras cambios SDK 58 / 1.0.1)
-- [x] Mockups Suave en `store/screenshots/` (sustituir por capturas reales en ficha)
-- [ ] ≥2 capturas **reales** Suave en Play Console
+- [x] Capturas reales Suave en `store/screenshots/`
+- [ ] ≥2 capturas Suave subidas en Play Console
 - [ ] Ficha + privacidad + 18+ + Data safety
 - [ ] Producto `remove_ads` activo + license tester
 - [ ] AAB al día en testing interno → smoke OK → envío a revisión
