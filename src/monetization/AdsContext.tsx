@@ -34,7 +34,27 @@ type AdsContextValue = {
 
 const AdsContext = createContext<AdsContextValue | null>(null);
 
-type IapApi = typeof import('react-native-iap');
+type IapPurchase = { productId?: string; id?: string };
+
+type IapApi = {
+  initConnection: () => Promise<unknown>;
+  endConnection: () => Promise<unknown>;
+  purchaseUpdatedListener: (
+    cb: (purchase: IapPurchase) => void | Promise<void>,
+  ) => { remove: () => void };
+  purchaseErrorListener: (cb: () => void) => { remove: () => void };
+  fetchProducts: (args: {
+    skus: string[];
+    type: 'in-app';
+  }) => Promise<unknown[] | null | undefined>;
+  getAvailablePurchases: () => Promise<IapPurchase[] | null | undefined>;
+  finishTransaction: (args: {
+    purchase: IapPurchase;
+    isConsumable: boolean;
+  }) => Promise<unknown>;
+  requestPurchase: (args: unknown) => Promise<unknown>;
+  restorePurchases: () => Promise<unknown>;
+};
 
 function loadIap(): IapApi | null {
   // Solo en builds EAS con flag nativo (Expo Go usa stubs / no IAP real).

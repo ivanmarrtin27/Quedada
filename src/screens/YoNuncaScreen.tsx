@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.sm,
   },
   stageGlow: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     borderRadius: radii.xl,
   },
   promptBlock: {

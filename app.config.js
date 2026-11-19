@@ -19,12 +19,9 @@ if (isProductionProfile && (usingTestAppId || !interstitial)) {
   );
 }
 
+// App IDs go only on the config plugin (SDK 58 ignores root-level keys beside `expo`).
 module.exports = {
   ...appJson,
-  'react-native-google-mobile-ads': {
-    android_app_id: androidAppId,
-    ios_app_id: iosAppId,
-  },
   expo: {
     ...appJson.expo,
     plugins: (appJson.expo.plugins || []).map((plugin) => {

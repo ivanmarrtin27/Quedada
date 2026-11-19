@@ -2,6 +2,7 @@
 
 Sigue este orden. Lo del repo (código + docs) ya está listo; el resto es **tu cuenta** Google / Expo.
 
+**App:** Quedada **1.0.1** · **Expo SDK 58** · Android `versionCode` 2  
 Package: `com.proyectospropios.quedada`  
 Soporte: `ivanmarrtin2703@gmail.com`  
 Privacidad: https://ivanmarrtin2703.github.io/quedada-privacy/  
@@ -64,9 +65,10 @@ Instala el APK y marca [`smoke-test.md`](smoke-test.md).
 
 ## B) Capturas para la ficha (tú, en el móvil)
 
-Usa el APK **preview**, modo **Suave** (nada de Picante en pantalla).
+Hay **mockups Suave** en [`screenshots/`](screenshots/) (logo real, 1080×1920) para docs.  
+Para la ficha Play, preferí **capturas reales** del APK **preview**, modo **Suave** (nada de Picante).
 
-Mínimo 2; ideal:
+Mínimo 2; ideal (mismos nombres):
 
 1. `01-home.png` — Home con logo y juegos  
 2. `02-preferencias.png` — duelo Qué Prefieres  
@@ -74,10 +76,10 @@ Mínimo 2; ideal:
 4. `04-yo-nunca.png` — Yo Nunca o Más Probable Suave  
 5. `05-ajustes.png` — Ajustes (opcional)
 
-Cópialas a `store/screenshots/`. Detalle: [`screenshots/README.md`](screenshots/README.md).
+Detalle: [`screenshots/README.md`](screenshots/README.md).
 
 Assets listos en repo:
-- Icono: `assets/icon.png`
+- Icono / logo: `assets/icon.png`, `assets/quedada-logo.png`
 - Feature graphic: `store/feature-graphic.png` (1024×500)
 
 ---
@@ -140,8 +142,9 @@ Primera app: suele tardar **1–3+ días**. Si rechazan, lee el motivo y avísam
 
 - [x] AdMob App ID + Interstitial reales (EAS production + preview)
 - [x] Vars EAS en production (+ preview)
-- [x] `eas build -p android --profile production` OK
-- [ ] ≥2 capturas Suave
+- [x] `eas build -p android --profile production` OK (histórico; rebuild tras cambios SDK 58 / 1.0.1)
+- [x] Mockups Suave en `store/screenshots/` (sustituir por capturas reales en ficha)
+- [ ] ≥2 capturas **reales** Suave en Play Console
 - [ ] Ficha + privacidad + 18+ + Data safety
 - [ ] Producto `remove_ads` activo + license tester
-- [ ] AAB en testing interno → smoke OK → envío a revisión
+- [ ] AAB al día en testing interno → smoke OK → envío a revisión

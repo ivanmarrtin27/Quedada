@@ -75,7 +75,7 @@ export default function App() {
       <SafeAreaProvider>
         <AdsProvider>
           <View style={styles.root}>
-            <StatusBar style="light" translucent />
+            <StatusBar style="light" />
             {screen === 'home' && (
               <HomeScreen
                 onSelectGame={openGame}

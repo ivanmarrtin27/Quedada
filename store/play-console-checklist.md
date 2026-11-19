@@ -2,13 +2,14 @@
 
 **Guía completa paso a paso:** [`launch-guide.es.md`](launch-guide.es.md)
 
+**Versión app:** 1.0.1 · **Expo SDK 58** · `versionCode` 2  
 Email soporte: `ivanmarrtin2703@gmail.com`  
 Package: `com.proyectospropios.quedada`  
 Privacidad: https://ivanmarrtin2703.github.io/quedada-privacy/  
 EAS: https://expo.dev/accounts/ivanmarrtin/projects/quedada  
 Textos ficha: [`play-listing.es.md`](play-listing.es.md)  
 Feature graphic: `feature-graphic.png` (1024×500)  
-Capturas: `screenshots/` (mín. 2, ideal 4–6, **sin Picante**) — ver [`screenshots/README.md`](screenshots/README.md)  
+Capturas: `screenshots/` (mín. 2, ideal 4–6, **sin Picante**; hay mockups de marca — preferir reales en ficha) — ver [`screenshots/README.md`](screenshots/README.md)  
 Smoke test: [`smoke-test.md`](smoke-test.md)
 
 ## Monetización en código (hecho)
@@ -17,13 +18,14 @@ Smoke test: [`smoke-test.md`](smoke-test.md)
 - Cooldown **3 min**
 - Production **falla** si faltan `EXPO_PUBLIC_ADMOB_*` reales
 
-## Builds EAS (histórico — rebuild obligatorio tras cambios)
+## Builds EAS (histórico — rebuild obligatorio tras cambios SDK / ads)
 
 | Perfil | Archivo | Nota |
 |--------|---------|------|
-| preview | APK | Solo QA/capturas; regenerar tras cambios de ads |
-| production | AAB **nuevo (30/9/2026)** | Listo para Play |
+| preview | APK | Solo QA/capturas; regenerar tras cambios de ads o SDK |
+| production | AAB | Tras subir a **1.0.1 / SDK 58**, hace falta **nuevo** AAB |
 
+Histórico (pre–SDK 58 rebuild):  
 - Build: https://expo.dev/accounts/ivanmarrtin/projects/quedada/builds/bd6c9a29-6c6f-4036-a818-94a1ae79a6e0  
 - AAB: https://expo.dev/artifacts/eas/-xuV-a-RLYxwkJjQi_7LXjw0t1E_5LmXUhnB26SvEqM.aab  
 

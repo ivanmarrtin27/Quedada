@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
     marginVertical: spacing.md,
   },
   stageGlow: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     borderRadius: radii.xl,
   },
   promptWrap: {

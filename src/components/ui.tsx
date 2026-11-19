@@ -264,10 +264,10 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   orbs: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
   },
   vignette: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
   },
   track: {
     height: 5,

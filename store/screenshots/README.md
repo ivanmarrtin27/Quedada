@@ -1,28 +1,36 @@
-# Capturas para Google Play
+# Capturas para Google Play / docs
 
-Play exige **mínimo 2** capturas de teléfono (recomendado 4–6).
+Play exige **mínimo 2** capturas de teléfono (recomendado 4–6). **Solo modo Suave** — nada de Picante en pantalla.
 
-## Cómo sacarlas (con el APK preview)
+## Archivos en este carpeta
 
-1. Instala el APK de EAS preview en tu móvil.
-2. Recorre la app en modo **Suave** (sin Picante en pantalla).
-3. Android: captura del sistema (botones Encendido + Volumen −, o gestos).
-4. Copia los PNG aquí con nombres claros:
+| Archivo | Pantalla |
+|---------|----------|
+| `01-home.png` | Home + logo + lista de juegos |
+| `02-preferencias.png` | Qué Prefieres (duelo A/B, Suave) |
+| `03-impostor.png` | Impostor — setup |
+| `04-yo-nunca.png` | Yo Nunca — carta Suave |
+| `05-ajustes.png` | Ajustes |
 
+Resolución: **1080 × 1920**.
+
+> **Origen actual:** mockups de marca generados con el logo real (`assets/quedada-logo.png`) y la paleta de la app. Sirven para README y como borrador de ficha.  
+> **Antes de publicar en Play:** sustituí por capturas reales del APK preview / dispositivo (más fieles a la UI nativa).
+
+## Cómo sacar capturas reales
+
+1. Instalá el APK de EAS **preview** (o build de producción de prueba).
+2. Recorré la app en modo **Suave**.
+3. Android: Encendido + Volumen − (o gestos del sistema).
+4. Sobreescribí los PNG de arriba con los mismos nombres.
+
+Regenerar mockups (opcional):
+
+```bash
+python store/screenshots/_gen_mockups.py
 ```
-01-home.png
-02-preferencias.png
-03-impostor.png
-04-yo-nunca.png
-05-ajustes.png
-```
 
-## Set recomendado (sin Picante)
+## Assets de marca listos
 
-1. Home — lista de juegos + logo Quedada
-2. Qué Prefieres — duelo A/B (categoría Clásico/Amigos)
-3. Impostor — setup o carta
-4. Yo Nunca o Más Probable (Suave)
-5. Ajustes (opcional)
-
-Resolución típica: **1080 × 1920** o la nativa del móvil.
+- Icono: `assets/icon.png` / `assets/quedada-logo.png`
+- Feature graphic: `store/feature-graphic.png` (1024×500)
